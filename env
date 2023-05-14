@@ -1,0 +1,2 @@
+PORT=5050
+ALTAS_URI='mongodb+srv://app:123@learnsi.crw8xqq.mongodb.net/?retryWrites=true&w=majority'
