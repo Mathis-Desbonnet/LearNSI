@@ -13,6 +13,8 @@ import AdbIcon from '@mui/icons-material/Adb';
 
 import { useNavigate } from "react-router-dom";
 
+{/* On créer le nom de nos catégories, et vers quel lien elle envoie l'utilisateur */}
+
 const pages = [ {name:'Home', link: "/"}, 
                 {name:'Docs', link:"/Docs"}, 
                 {name:'Quiz', link: "/Quiz"}, 
@@ -20,7 +22,11 @@ const pages = [ {name:'Home', link: "/"},
 
 function Navbar() {
 
+  {/* Outil de navigation entre les pages */}
+
   let navigate = useNavigate();
+
+  {/* Création des paramètres de notre menu */}
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -75,6 +81,7 @@ function Navbar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
+              {/* Mapage pour afficher toutes les catégories */}
               {pages.map((page) => (
                 <MenuItem key={page.name} onClick={() => redirectRoute(page.link)}>
                   <Typography textAlign="center">{page.name}</Typography>
@@ -82,6 +89,8 @@ function Navbar() {
               ))}
             </Menu>
           </Box>
+
+          {/* Logo */}
 
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
@@ -104,6 +113,8 @@ function Navbar() {
           </Typography>
 
         {/* Laptop design */}
+
+          {/* Logo */}
 
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> {/* Add icon */}
           <Typography

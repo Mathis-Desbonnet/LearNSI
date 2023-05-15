@@ -9,11 +9,15 @@ import Grid from '@mui/material/Grid';
 import Navbar from './Navbar.jsx';
 import Image from 'mui-image';
 
+{/* Création du thème */}
+
 const theme = createTheme({
     typography: {
       fontFamily: '"Playfair Display"',
     },
   });
+
+{/* Style pour le background image de notre menu */}
 
 const styles = {
     paperContainer: {
