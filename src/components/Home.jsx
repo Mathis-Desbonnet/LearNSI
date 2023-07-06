@@ -113,8 +113,38 @@ function Home() {
               </Typography>
             </Grid>
           </Grid>
-          <Grid container item xs={6}>
-            <div tag="circle1"></div>
+          <Grid container item xs={6} gutterBottom>
+            <div
+              tag="circle1"
+              style={{
+                backgroundColor: "#F9B093",
+                width: "300px",
+                height: "300px",
+                borderRadius: "50% 50% 50% 50% / 50% 50% 50% 50%",
+                transform: "translate(100px, 30px)",
+              }}
+            ></div>
+            <div
+              tag="circle2"
+              style={{
+                backgroundColor: "#F0CEC8",
+                width: "200px",
+                height: "200px",
+                borderRadius: "50% 50% 50% 50% / 50% 50% 50% 50%",
+                transform: "translate(100px, 30px)",
+              }}
+            ></div>
+            <div
+              tag="circle3"
+              style={{
+                backgroundColor: "#FEF4EF",
+                width: "150px",
+                height: "150px",
+                borderRadius: "50% 50% 50% 50% / 50% 50% 50% 50%",
+                transform: "translate(-130px, 230px)",
+              }}
+              gutterBottom
+            ></div>
           </Grid>
         </Grid>
       </Box>
