@@ -114,7 +114,7 @@ function Home() {
             </Grid>
           </Grid>
           <Grid container item xs={6}>
-            <Image src={Image2} />
+            <div tag="circle1"></div>
           </Grid>
         </Grid>
       </Box>
