@@ -23,7 +23,7 @@ const theme = createTheme({
   /* Style pour le background image de notre menu */
 }
 /* The `styles` object is defining a CSS style for the background image of a container element. */
-
+/* Yes*/
 const styles = {
   paperContainer: {
     backgroundImage: `url(${Image1})`,
