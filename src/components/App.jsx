@@ -1,12 +1,16 @@
 import QuizApp from "./QuizApp.jsx"
-
 import * as React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Navbar from "./Navbar.jsx";
 
+{/* Mise en forme de la page du Quiz */}
+
 const { palette } = createTheme();
 
 function Quiz() {
+
+  {/* Mise en place du thème pour la couleur des boutons et la police d'ecriture */}
+
   const theme = createTheme({
     palette: {
       buttonColor: palette.augmentColor({
@@ -23,8 +27,8 @@ function Quiz() {
   return (
 
   <ThemeProvider theme={theme}>
-    <Navbar />
-    <QuizApp />
+    <Navbar /> {/* Ajoute la NavBar */}
+    <QuizApp /> {/* Ajoute le Quiz */}
 </ThemeProvider>
   );
 }
